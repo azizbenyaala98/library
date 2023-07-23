@@ -1,0 +1,53 @@
+<h2 >Add a book</h2>
+<form #f="ngForm">
+  <div >
+    <div>
+      <label for="" 
+        >ID</label
+      >
+      <input
+        type="text"
+        ngModel
+        name="id"
+      />
+    </div>
+    <div>
+      <label for="" >
+        title</label
+      >
+      <input
+        type="text"
+         ngModel
+        name="title"
+      />
+    </div>
+
+    <div>
+      <label for="" >
+        Author</label
+      >
+      <input
+        type="text"
+       ngModel
+        name="author"
+      />
+    </div>
+    <div>
+      <label for="" >
+        Editor</label
+      >
+      <input
+        type="text"
+        ngModel
+        name="editor"
+      />
+    </div>
+  </div>
+
+  <button
+     type="submit"
+    (click)="create(f.value)"
+  >
+    Add
+  </button>
+</form>
