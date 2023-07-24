@@ -13,17 +13,14 @@ export class AddComponent {
   constructor(private BookService: LivreService, private router: Router) {}
 
   create(book: Livre) {
-   /* if (!this.isFormValid(book)) {
+    if (!this.isFormValid(book)) {
       return;
-    }*/
+    }
 
     // Ensure that the book id is a number
     const newBook = {
       ...book,
       id: Number(book.id),
-      Title: String(book.titre),
-      Auteur: String(book.auteur),
-      Editeur: String(book.editeur),
     };
     // Add the book
     this.BookService.addOne(newBook);
