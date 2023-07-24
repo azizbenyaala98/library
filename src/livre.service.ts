@@ -23,7 +23,7 @@ export class LivreService {
   }
 
   addOne(book: Livre) {
-    this.list.push({ ...book,anneePublication: new Date()});
+    this.list.push({ ...book,id:book.id,titre:book.titre,auteur:book.auteur,editeur:book.editeur,anneePublication: new Date()});
     return this.list;
   }
   filterById(id: number) {

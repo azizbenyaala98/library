@@ -1,57 +1,24 @@
-<h2 >Edit a book</h2>
-<form #f="ngForm">
-  <div >
+<!-- HTML -->
+<h2 class="form-title">Edit a book</h2>
+<form #f="ngForm" class="book-form">
+  <div class="form-group">
     <div>
-      <label for="" 
-        >ID</label
-      >
-      <input
-        type="text"
-         ngModel
-        [(ngModel)]="book.id"
-        name="id"
-      />
+      <label for="id">ID</label>
+      <input type="text" ngModel [(ngModel)]="book.id" name="id" id="id" />
     </div>
     <div>
-      <label for="" >
-        title</label
-      >
-      <input
-        type="text"
-         ngModel
-        [(ngModel)]="book.titre"
-        name="title"
-      />
-    </div>
-
-    <div>
-      <label for="" >
-        Author</label
-      >
-      <input
-        type="text"
-          ngModel
-        [(ngModel)]="book.auteur"
-        name="author"
-      />
+      <label for="title">Title</label>
+      <input type="text" ngModel [(ngModel)]="book.titre" name="title" id="title" />
     </div>
     <div>
-      <label for="" >
-        Editor</label
-      >
-      <input
-        type="text"
-         ngModel
-        name="editor"
-        [(ngModel)]="book.editeur"
-      />
+      <label for="author">Author</label>
+      <input type="text" ngModel [(ngModel)]="book.auteur" name="author" id="author" />
+    </div>
+    <div>
+      <label for="editor">Editor</label>
+      <input type="text" ngModel [(ngModel)]="book.editeur" name="editor" id="editor" />
     </div>
   </div>
 
-  <button
-     type="submit"
-    (click)="edit()"
-  >
-    Edit
-  </button>
+  <button type="submit" class="edit-button" (click)="edit()">Edit</button>
 </form>
