@@ -3,6 +3,6 @@ export interface Livre {
     titre: string;
     auteur: string;
     editeur: string;
-    anneePublication: number;
+    anneePublication: Date;
   }
   

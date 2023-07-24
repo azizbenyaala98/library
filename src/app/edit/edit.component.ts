@@ -14,7 +14,7 @@ export class EditComponent {
     titre: '',
     auteur: '',
     editeur: '',
-    anneePublication: 0,
+    anneePublication: new Date (),
   };
   constructor(
     private actRoute: ActivatedRoute,

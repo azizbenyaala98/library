@@ -14,7 +14,7 @@ export class LivreService {
     titre:"title test",
     auteur:"author test",
     editeur:"editorr test",
-    anneePublication:2011
+    anneePublication:new Date(),
 
 
   },];
@@ -23,7 +23,7 @@ export class LivreService {
   }
 
   addOne(book: Livre) {
-    this.list.push({ ...book,});
+    this.list.push({ ...book,anneePublication: new Date()});
     return this.list;
   }
   filterById(id: number) {
