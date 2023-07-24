@@ -11,9 +11,9 @@ export class LivreService {
   
   list : Livre[]=[{
     id:1,
-    titre:"title test",
-    auteur:"author test",
-    editeur:"editorr test",
+    titre:'title test',
+    auteur:'author test',
+    editeur:'editorr test',
     anneePublication:new Date(),
 
 
